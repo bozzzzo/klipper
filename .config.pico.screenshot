@@ -1,0 +1,13 @@
+(Top)
+                                                                         Klipper Firmware Configuration
+[*] Enable extra low-level configuration options
+    Micro-controller Architecture (Raspberry Pi RP2040/RP235x)  --->
+    Processor model (rp2040)  --->
+    Bootloader offset (16KiB bootloader)  --->
+    Communication Interface (USB to CAN bus bridge)  --->
+(1) CAN RX gpio number
+(0) CAN TX gpio number
+    USB ids  --->
+(1000000) CAN bus speed
+()  GPIO pins to set at micro-controller startup
+

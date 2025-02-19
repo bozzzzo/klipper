@@ -1,0 +1,6 @@
+(Top)
+                                                                         Klipper Firmware Configuration
+[*] Enable extra low-level configuration options
+    Micro-controller Architecture (Linux process)  --->
+()  GPIO pins to set at micro-controller startup
+
