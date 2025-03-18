@@ -5,7 +5,7 @@ make KCONFIG_CONFIG=.config.pico clean
 make KCONFIG_CONFIG=.config.pico 
 MCU_CAN_UUID=b28a29fc6ddf 
 MCU_SERIAL_ID=/dev/serial/by-id/usb-katapult_rp2040_4550357129124138-if00
-~/katapult/scripts/flashtool.py -u $MCU_CAN_UUID -f ~/klipper/out/klipper.bin -r
+test -e $MCU_SERIAL_ID || ~/katapult/scripts/flashtool.py -u $MCU_CAN_UUID -f ~/klipper/out/klipper.bin -r
 while test \! -e $MCU_SERIAL_ID; do echo Wait reboot; sleep 1; done
 python3 ~/katapult/scripts/flash_can.py -f ~/klipper/out/klipper.bin -d $MCU_SERIAL_ID
 sleep 10
